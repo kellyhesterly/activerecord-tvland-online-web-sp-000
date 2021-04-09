@@ -5,5 +5,6 @@ class Show < ActiveRecord::Base
 
   def actors_list
     "#{self.actors.first.first_name} #{self.actors.first.last_name}"
+    binding.pry
   end
 end
